@@ -1,0 +1,320 @@
+.card {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    background-color: #f0f0f0;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card-text {
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.card-link {
+    text-decoration: none;
+    color: #3498db;
+}
+
+.section-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+
+.col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1200px) {
+    .col-md-3 {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
+}
+
+@media (max-width: 768px) {
+    .col-md-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-md-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+.empty-message-container {
+    text-align: center;
+}
+
+.empty-message-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.empty-message {
+    font-family: "Arial", sans-serif;
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0;
+}
+
+.product-details {
+    max-width: 100%;
+    margin: auto;
+    padding: 40px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    position: relative;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.product-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product-info {
+    margin-bottom: 15px;
+}
+
+.product-label {
+    font-weight: bold;
+    color: #333;
+}
+
+.product-value {
+    color: #666;
+}
+
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.back-button:hover {
+    transform: scale(1.2);
+}
+
+.create-product-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    color: black !important;
+    text-decoration: none !important;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.create-product-button:hover {
+    transform: scale(1.05);
+    background-color: #f0f0f0;
+}
+
+.create-product-button i {
+    margin-right: 5px;
+    color: black;
+}
+
+.create-product-button:hover,
+.create-product-button:active,
+.create-product-button:focus {
+    outline: none;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.form-label {
+    font-weight: bold;
+    color: #333;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    color: black;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    background-color: #f0f0f0;
+}
+.form-check {
+    margin-bottom: 10px;
+}
+
+.form-check-input {
+    margin-right: 5px;
+}
+
+.form-check-label {
+    color: #666;
+}
+.category-checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-right: 5px;
+    margin-bottom: 15px;
+}
+
+.checkbox-container input {
+    display: none;
+}
+
+.checkmark {
+    height: 16px;
+    width: 16px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.checkbox-container input:checked + .checkmark {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+.category-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.category-container {
+    margin-bottom: 20px;
+}
+.category-container {
+    margin-bottom: 20px;
+}
+
+.category-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.category-checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.checkbox-container {
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    color: black;
+}
+
+.back-button:hover {
+    transform: scale(1.2);
+}
+.section-container.form-container {
+    position: relative;
+}
+.error {
+    font-size: 0.9rem;
+    color: #e74c3c;
+    margin-top: 5px;
+    font-style: italic;
+}
